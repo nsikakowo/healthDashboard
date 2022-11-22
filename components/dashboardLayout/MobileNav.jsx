@@ -87,6 +87,7 @@ const MobileNav = () => {
       <ul className="h-full flex text-[white] items-center justify-between">
         {smalmenulist.map((menu) => (
           <li
+            key={menu.id}
             className={` cursor-pointer flex flex-col justify-center items-center
           ${
             router.pathname == menu.link
@@ -122,6 +123,7 @@ const MobileNav = () => {
           >
             {menulist.map((menu) => (
               <li
+                key={menu.id}
                 className={` cursor-pointer flex flex-col mb-[50px] mx-4 justify-center items-center
           ${
             router.pathname == menu.link
